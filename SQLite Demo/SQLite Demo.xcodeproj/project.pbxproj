@@ -23,7 +23,7 @@
 		6C1EB6ED2971C2C3000A1A46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C1EB6EF2971C2C4000A1A46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C1EB6F22971C2C4000A1A46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6C1EB6F42971C2C4000A1A46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C1EB6F42971C2C4000A1A46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "SQLite Demo/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,63 @@
 		6C1EB6E52971C2C3000A1A46 /* SQLite Demo */ = {
 			isa = PBXGroup;
 			children = (
-				6C1EB6E62971C2C3000A1A46 /* AppDelegate.swift */,
-				6C1EB6E82971C2C3000A1A46 /* SceneDelegate.swift */,
-				6C1EB6EA2971C2C3000A1A46 /* ViewController.swift */,
+				6C1EB6FE2971D09D000A1A46 /* Helper */,
+				6C1EB6FD2971D072000A1A46 /* Supporting Files */,
+				6C1EB6FC2971D066000A1A46 /* Model */,
+				6C1EB6FB2971D060000A1A46 /* View */,
+				6C1EB6FA2971D04D000A1A46 /* Controller */,
 				6C1EB6EC2971C2C3000A1A46 /* Main.storyboard */,
 				6C1EB6EF2971C2C4000A1A46 /* Assets.xcassets */,
 				6C1EB6F12971C2C4000A1A46 /* LaunchScreen.storyboard */,
-				6C1EB6F42971C2C4000A1A46 /* Info.plist */,
 			);
 			path = "SQLite Demo";
+			sourceTree = "<group>";
+		};
+		6C1EB6FA2971D04D000A1A46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EB6EA2971C2C3000A1A46 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C1EB6FB2971D060000A1A46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EB6FF2971D14D000A1A46 /* StoryBoard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C1EB6FC2971D066000A1A46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C1EB6FD2971D072000A1A46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EB6F42971C2C4000A1A46 /* Info.plist */,
+				6C1EB6E62971C2C3000A1A46 /* AppDelegate.swift */,
+				6C1EB6E82971C2C3000A1A46 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C1EB6FE2971D09D000A1A46 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6C1EB6FF2971D14D000A1A46 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88MNYF3498;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SQLite Demo/Info.plist";
+				INFOPLIST_FILE = "SQLite Demo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88MNYF3498;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SQLite Demo/Info.plist";
+				INFOPLIST_FILE = "SQLite Demo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
