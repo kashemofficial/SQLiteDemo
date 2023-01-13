@@ -9,11 +9,37 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var studentTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setUpTableView()
     }
-
+    
+    func setUpTableView(){
+        let nib = UINib(nibName: "StudentTableViewCell", bundle: nil)
+        studentTableView.register(nib, forCellReuseIdentifier: "cell")
+        studentTableView.delegate = self
+        studentTableView.dataSource = self
+    }
 
 }
 
+extension ViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! StudentTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    
+    
+}
