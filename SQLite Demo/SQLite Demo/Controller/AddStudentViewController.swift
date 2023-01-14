@@ -12,11 +12,18 @@ class AddStudentViewController: UIViewController {
     @IBOutlet weak var studentMarksTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
+    var student : StudentModel?
+    var headerTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if headerTitle != ""{
+            self.title = headerTitle
+            studentNameTextField.text = student?.name
+            studentMarksTextField.text = student?.marks
+        }
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {

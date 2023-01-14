@@ -30,6 +30,28 @@ class ModelMenager {
         return isSave!
     }
     
+    //MARK: Fetching Student Data
+    
+    func getAllStudent() -> [StudentModel] {
+        shareInstance.database?.open()
+        var students = [StudentModel]()
+
+        do{
+            let resultset : FMResultSet? = try
+            shareInstance.database?.executeQuery("SELECT  * FROM  student", values: nil)
+
+            if resultset != nil{
+                while resultset!.next(){
+                    let studentModel = StudentModel(id: (resultset?.string(forColumn: "id"))!, name: (resultset?.string(forColumn: "name"))!, marks: (resultset?.string(forColumn: "marks"))!)
+                    students.append(studentModel)
+                }
+            }
+        }catch {
+            
+        }
+        shareInstance.database?.close()
+        return students
+    }
     
     
     
