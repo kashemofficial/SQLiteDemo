@@ -46,19 +46,17 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! StudentTableViewCell
         cell.nameLabel.text = allStudent[indexPath.row].name
         cell.marksLabel.text = allStudent[indexPath.row].marks
+        cell.idLabel.text = allStudent[indexPath.row].id
         cell.editButton.tag = indexPath.row
         cell.deleteButton.tag = indexPath.row
         cell.editButton.addTarget(self, action: #selector(onClickEdit(_:)), for: .touchUpInside)
         cell.deleteButton.addTarget(self, action: #selector(onClickDelete(_:)), for: .touchUpInside)
-        
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 110
     }
-    
     
     @objc func onClickEdit(_ sender: UIButton){
         let vc = storyboard?.instantiateViewController(withIdentifier: "AddStudentViewController") as! AddStudentViewController
@@ -68,7 +66,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     @objc func onClickDelete(_ sender: UIButton){
-        print(sender.tag)
+        let isDeleted = ModelMenager.getInstance().deleteStudent(student: allStudent[sender.tag])
+        allStudent.remove(at: sender.tag)
+        studentTableView.reloadData()
+        print("isDeleted : \(isDeleted)")
+        
     }
     
     

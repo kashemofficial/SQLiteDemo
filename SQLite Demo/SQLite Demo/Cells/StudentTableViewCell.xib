@@ -66,14 +66,31 @@
                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </buttonConfiguration>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-Db-Dsd">
+                        <rect key="frame" x="10" y="82" width="55" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLF-UR-0UY">
+                        <rect key="frame" x="75" y="82" width="8.3333333333333286" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="jsx-c4-teS" firstAttribute="leading" secondItem="of3-3r-HxA" secondAttribute="trailing" constant="10" id="1ZZ-dM-Q6R"/>
+                    <constraint firstItem="OLF-UR-0UY" firstAttribute="top" secondItem="lBB-Db-Dsd" secondAttribute="top" id="3pF-VB-Ihf"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="trailing" secondItem="of3-3r-HxA" secondAttribute="trailing" id="6ZQ-gd-nq8"/>
                     <constraint firstItem="JwT-QB-g6t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9S9-O4-T4K" secondAttribute="trailing" constant="10" id="7ip-5n-FIK"/>
                     <constraint firstItem="of3-3r-HxA" firstAttribute="top" secondItem="Gci-yZ-kO1" secondAttribute="bottom" constant="15" id="A7M-tx-pC5"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="width" secondItem="JwT-QB-g6t" secondAttribute="width" id="AOT-Nt-AYB"/>
+                    <constraint firstItem="OLF-UR-0UY" firstAttribute="leading" secondItem="lBB-Db-Dsd" secondAttribute="trailing" constant="10" id="CTv-uS-ydr"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="leading" secondItem="of3-3r-HxA" secondAttribute="leading" id="EX3-X0-WsD"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="height" secondItem="JwT-QB-g6t" secondAttribute="height" id="FZh-QG-cus"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="top" secondItem="JwT-QB-g6t" secondAttribute="bottom" constant="10" id="Ic4-AT-jM9"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="top" secondItem="of3-3r-HxA" secondAttribute="bottom" constant="15" id="My1-Tc-6jq"/>
                     <constraint firstAttribute="trailing" secondItem="JwT-QB-g6t" secondAttribute="trailing" constant="5" id="SCE-08-aly"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="trailing" secondItem="JwT-QB-g6t" secondAttribute="trailing" id="SDb-rz-2Op"/>
                     <constraint firstItem="of3-3r-HxA" firstAttribute="trailing" secondItem="Gci-yZ-kO1" secondAttribute="trailing" id="VXl-K5-bvq"/>
@@ -91,6 +108,7 @@
             <connections>
                 <outlet property="deleteButton" destination="AGL-zN-ez2" id="A0d-Va-zvI"/>
                 <outlet property="editButton" destination="JwT-QB-g6t" id="uqR-8a-q4D"/>
+                <outlet property="idLabel" destination="OLF-UR-0UY" id="DKw-0c-0fY"/>
                 <outlet property="marksLabel" destination="jsx-c4-teS" id="8zD-vq-1Fu"/>
                 <outlet property="nameLabel" destination="9S9-O4-T4K" id="O3w-hX-6Xa"/>
             </connections>

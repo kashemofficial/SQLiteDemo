@@ -30,7 +30,7 @@ class ModelMenager {
         return isSave!
     }
     
-    //MARK: Fetching Student Data
+    //MARK: Get All Students data
     
     func getAllStudent() -> [StudentModel] {
         shareInstance.database?.open()
@@ -53,6 +53,23 @@ class ModelMenager {
         return students
     }
     
+    //MARK: Update Students data
+    
+    func updateStudent(student: StudentModel) -> Bool{
+        shareInstance.database?.open()
+        let isUpdate = shareInstance.database?.executeUpdate("UPDATE student SET name=?, marks=? WHERE id=? ", withArgumentsIn: [student.name,student.marks,student.id])
+        shareInstance.database?.close()
+        return isUpdate!
+    }
+    
+    //MARK: Delete Student Data
+    
+    func deleteStudent(student: StudentModel) -> Bool{
+        shareInstance.database?.open()
+        let isDeleted = (shareInstance.database?.executeUpdate("DELETE FROM student WHERE name=?", withArgumentsIn: [student.name]))
+        shareInstance.database?.close()
+        return isDeleted!
+    }
     
     
 }

@@ -23,21 +23,25 @@ class AddStudentViewController: UIViewController {
             studentNameTextField.text = student?.name
             studentMarksTextField.text = student?.marks
         }
-
+        
     }
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }
     
-    
     @IBAction func saveButtonAction(_ sender: UIButton) {
         
-        let student = StudentModel(id: "", name: studentNameTextField.text!, marks: studentMarksTextField.text!)
-        
-        let isSave = ModelMenager.getInstance().SaveStudent(studentModel: student)
-        
+        if headerTitle != ""{
+            let student = StudentModel(id: student!.id, name: studentNameTextField.text!, marks: studentMarksTextField.text!)
+            let isUpdate = ModelMenager.getInstance().updateStudent(student: student)
+            print("isUpdate :\(isUpdate)")
+        }
+        else{
+            let student = StudentModel(id: "", name: studentNameTextField.text!, marks: studentMarksTextField.text!)
+            let isSave = ModelMenager.getInstance().SaveStudent(studentModel: student)
+            print("isSave : \(isSave)")
+        }
     }
     
-
 }
