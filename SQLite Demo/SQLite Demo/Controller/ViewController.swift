@@ -16,6 +16,12 @@ class ViewController: UIViewController {
         setUpTableView()
     }
     
+    @IBAction func rightBarButtonAction(_ sender: UIBarButtonItem) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AddStudentViewController") as! AddStudentViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     func setUpTableView(){
         let nib = UINib(nibName: "StudentTableViewCell", bundle: nil)
         studentTableView.register(nib, forCellReuseIdentifier: "cell")
@@ -39,7 +45,5 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
-    
     
 }

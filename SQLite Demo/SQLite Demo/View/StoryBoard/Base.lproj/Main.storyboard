@@ -45,6 +45,9 @@
                         <barButtonItem key="rightBarButtonItem" id="0KZ-JA-y9f">
                             <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="rightBarButtonAction:" destination="BYZ-38-t0r" id="9b0-Gy-4rJ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -112,6 +115,9 @@
                                     <color systemColor="tertiaryLabelColor"/>
                                 </hierarchicalColors>
                             </imageReference>
+                            <connections>
+                                <action selector="leftBarButtonAction:" destination="bwY-qv-wwk" id="6z2-HS-gZm"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

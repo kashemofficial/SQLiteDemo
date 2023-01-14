@@ -16,6 +16,15 @@
 		6C1EB7012971DA26000A1A46 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EB7002971DA26000A1A46 /* AddStudentViewController.swift */; };
 		6C1EB7052971E041000A1A46 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1EB7032971E041000A1A46 /* StudentTableViewCell.swift */; };
 		6C1EB7062971E041000A1A46 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1EB7042971E041000A1A46 /* StudentTableViewCell.xib */; };
+		6C73F591297263FE00C4A049 /* SqliteDemo.db in Resources */ = {isa = PBXBuildFile; fileRef = 6C73F590297263FE00C4A049 /* SqliteDemo.db */; };
+		6C73F59F2972696700C4A049 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5952972696700C4A049 /* FMDatabaseQueue.m */; };
+		6C73F5A02972696700C4A049 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5962972696700C4A049 /* FMDatabasePool.m */; };
+		6C73F5A12972696700C4A049 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F59A2972696700C4A049 /* FMDatabase.m */; };
+		6C73F5A22972696700C4A049 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F59B2972696700C4A049 /* FMDatabaseAdditions.m */; };
+		6C73F5A32972696700C4A049 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F59E2972696700C4A049 /* FMResultSet.m */; };
+		6C73F5A529726A0200C4A049 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A429726A0200C4A049 /* Util.swift */; };
+		6C73F5A729726BC200C4A049 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A629726BC200C4A049 /* StudentModel.swift */; };
+		6C73F5A929726C2600C4A049 /* ModelMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A829726C2600C4A049 /* ModelMenager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,22 @@
 		6C1EB7002971DA26000A1A46 /* AddStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
 		6C1EB7032971E041000A1A46 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		6C1EB7042971E041000A1A46 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		6C73F590297263FE00C4A049 /* SqliteDemo.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = SqliteDemo.db; sourceTree = "<group>"; };
+		6C73F5932972696700C4A049 /* SQLite Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLite Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C73F5942972696700C4A049 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		6C73F5952972696700C4A049 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		6C73F5962972696700C4A049 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		6C73F5972972696700C4A049 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		6C73F5982972696700C4A049 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		6C73F5992972696700C4A049 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		6C73F59A2972696700C4A049 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		6C73F59B2972696700C4A049 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		6C73F59C2972696700C4A049 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		6C73F59D2972696700C4A049 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		6C73F59E2972696700C4A049 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		6C73F5A429726A0200C4A049 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		6C73F5A629726BC200C4A049 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		6C73F5A829726C2600C4A049 /* ModelMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMenager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +117,10 @@
 		6C1EB6FC2971D066000A1A46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6C73F590297263FE00C4A049 /* SqliteDemo.db */,
+				6C73F5A429726A0200C4A049 /* Util.swift */,
+				6C73F5A829726C2600C4A049 /* ModelMenager.swift */,
+				6C73F5A629726BC200C4A049 /* StudentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +139,7 @@
 		6C1EB6FE2971D09D000A1A46 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6C73F5922972693000C4A049 /* FMDB */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -130,6 +160,25 @@
 				6C1EB7042971E041000A1A46 /* StudentTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6C73F5922972693000C4A049 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				6C73F5982972696700C4A049 /* FMDatabase.h */,
+				6C73F59A2972696700C4A049 /* FMDatabase.m */,
+				6C73F59C2972696700C4A049 /* FMDatabaseAdditions.h */,
+				6C73F59B2972696700C4A049 /* FMDatabaseAdditions.m */,
+				6C73F5992972696700C4A049 /* FMDatabasePool.h */,
+				6C73F5962972696700C4A049 /* FMDatabasePool.m */,
+				6C73F5942972696700C4A049 /* FMDatabaseQueue.h */,
+				6C73F5952972696700C4A049 /* FMDatabaseQueue.m */,
+				6C73F5972972696700C4A049 /* FMDB.h */,
+				6C73F59D2972696700C4A049 /* FMResultSet.h */,
+				6C73F59E2972696700C4A049 /* FMResultSet.m */,
+				6C73F5932972696700C4A049 /* SQLite Demo-Bridging-Header.h */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +213,7 @@
 				TargetAttributes = {
 					6C1EB6E22971C2C3000A1A46 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -194,6 +244,7 @@
 				6C1EB6F02971C2C4000A1A46 /* Assets.xcassets in Resources */,
 				6C1EB6EE2971C2C3000A1A46 /* Main.storyboard in Resources */,
 				6C1EB7062971E041000A1A46 /* StudentTableViewCell.xib in Resources */,
+				6C73F591297263FE00C4A049 /* SqliteDemo.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +255,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C73F5A529726A0200C4A049 /* Util.swift in Sources */,
+				6C73F5A729726BC200C4A049 /* StudentModel.swift in Sources */,
 				6C1EB7012971DA26000A1A46 /* AddStudentViewController.swift in Sources */,
 				6C1EB7052971E041000A1A46 /* StudentTableViewCell.swift in Sources */,
 				6C1EB6EB2971C2C3000A1A46 /* ViewController.swift in Sources */,
 				6C1EB6E72971C2C3000A1A46 /* AppDelegate.swift in Sources */,
+				6C73F5A929726C2600C4A049 /* ModelMenager.swift in Sources */,
+				6C73F5A32972696700C4A049 /* FMResultSet.m in Sources */,
+				6C73F5A02972696700C4A049 /* FMDatabasePool.m in Sources */,
+				6C73F5A22972696700C4A049 /* FMDatabaseAdditions.m in Sources */,
 				6C1EB6E92971C2C3000A1A46 /* SceneDelegate.swift in Sources */,
+				6C73F59F2972696700C4A049 /* FMDatabaseQueue.m in Sources */,
+				6C73F5A12972696700C4A049 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88MNYF3498;
@@ -371,6 +431,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kashem.com.SQLite-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLite Demo/Helper/FMDB/SQLite Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88MNYF3498;
@@ -399,6 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kashem.com.SQLite-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLite Demo/Helper/FMDB/SQLite Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

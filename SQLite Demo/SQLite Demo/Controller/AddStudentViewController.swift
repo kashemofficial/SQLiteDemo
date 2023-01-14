@@ -19,9 +19,16 @@ class AddStudentViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     @IBAction func saveButtonAction(_ sender: UIButton) {
         
+        let student = StudentModel(id: "", name: studentNameTextField.text!, marks: studentMarksTextField.text!)
+        
+        let isSave = ModelMenager.getInstance().SaveStudent(studentModel: student)
         
     }
     
