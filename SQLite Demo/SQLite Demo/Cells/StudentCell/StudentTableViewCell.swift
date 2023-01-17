@@ -11,7 +11,6 @@ class StudentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var marksLabel: UILabel!
-    
     @IBOutlet weak var idLabel: UILabel!
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!

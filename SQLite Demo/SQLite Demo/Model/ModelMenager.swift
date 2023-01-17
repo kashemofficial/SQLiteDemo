@@ -13,7 +13,6 @@ var shareInstance = ModelMenager()
 
 class ModelMenager {
     var database: FMDatabase? = nil
-    
     static func getInstance() -> ModelMenager {
         if shareInstance.database == nil{
             shareInstance.database = FMDatabase(path: Util.share.getPath(dbName: "SqliteDemo.db"))
@@ -38,7 +37,7 @@ class ModelMenager {
 
         do{
             let resultset : FMResultSet? = try
-            shareInstance.database?.executeQuery("SELECT  * FROM  student", values: nil)
+            shareInstance.database?.executeQuery("SELECT * FROM student", values: nil)
 
             if resultset != nil{
                 while resultset!.next(){
@@ -70,7 +69,6 @@ class ModelMenager {
         shareInstance.database?.close()
         return isDeleted!
     }
-    
     
 }
 

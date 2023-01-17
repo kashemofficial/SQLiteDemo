@@ -25,6 +25,13 @@
 		6C73F5A529726A0200C4A049 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A429726A0200C4A049 /* Util.swift */; };
 		6C73F5A729726BC200C4A049 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A629726BC200C4A049 /* StudentModel.swift */; };
 		6C73F5A929726C2600C4A049 /* ModelMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73F5A829726C2600C4A049 /* ModelMenager.swift */; };
+		6CB3BD6729766A5900B8CDB2 /* StudentSubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3BD6629766A5900B8CDB2 /* StudentSubjectVC.swift */; };
+		6CB3BD6929766AA700B8CDB2 /* AddSubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3BD6829766AA700B8CDB2 /* AddSubjectVC.swift */; };
+		6CB3BD6B29766FA800B8CDB2 /* SubjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3BD6A29766FA800B8CDB2 /* SubjectModel.swift */; };
+		6CB3BD6D2976705C00B8CDB2 /* SubjectModelMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3BD6C2976705C00B8CDB2 /* SubjectModelMenager.swift */; };
+		6CB3BD7429767C2900B8CDB2 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB3BD7229767C2900B8CDB2 /* SubjectTableViewCell.swift */; };
+		6CB3BD7529767C2900B8CDB2 /* SubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CB3BD7329767C2900B8CDB2 /* SubjectTableViewCell.xib */; };
+		6CB3BD772976A1CA00B8CDB2 /* StudentSubject.db in Resources */ = {isa = PBXBuildFile; fileRef = 6CB3BD762976A1CA00B8CDB2 /* StudentSubject.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +62,13 @@
 		6C73F5A429726A0200C4A049 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		6C73F5A629726BC200C4A049 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		6C73F5A829726C2600C4A049 /* ModelMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMenager.swift; sourceTree = "<group>"; };
+		6CB3BD6629766A5900B8CDB2 /* StudentSubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSubjectVC.swift; sourceTree = "<group>"; };
+		6CB3BD6829766AA700B8CDB2 /* AddSubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectVC.swift; sourceTree = "<group>"; };
+		6CB3BD6A29766FA800B8CDB2 /* SubjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModel.swift; sourceTree = "<group>"; };
+		6CB3BD6C2976705C00B8CDB2 /* SubjectModelMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectModelMenager.swift; sourceTree = "<group>"; };
+		6CB3BD7229767C2900B8CDB2 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		6CB3BD7329767C2900B8CDB2 /* SubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubjectTableViewCell.xib; sourceTree = "<group>"; };
+		6CB3BD762976A1CA00B8CDB2 /* StudentSubject.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = StudentSubject.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				6C1EB6EA2971C2C3000A1A46 /* ViewController.swift */,
+				6CB3BD6629766A5900B8CDB2 /* StudentSubjectVC.swift */,
+				6CB3BD6829766AA700B8CDB2 /* AddSubjectVC.swift */,
 				6C1EB7002971DA26000A1A46 /* AddStudentViewController.swift */,
 			);
 			path = Controller;
@@ -117,10 +133,13 @@
 		6C1EB6FC2971D066000A1A46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6CB3BD762976A1CA00B8CDB2 /* StudentSubject.db */,
 				6C73F590297263FE00C4A049 /* SqliteDemo.db */,
 				6C73F5A429726A0200C4A049 /* Util.swift */,
 				6C73F5A829726C2600C4A049 /* ModelMenager.swift */,
 				6C73F5A629726BC200C4A049 /* StudentModel.swift */,
+				6CB3BD6A29766FA800B8CDB2 /* SubjectModel.swift */,
+				6CB3BD6C2976705C00B8CDB2 /* SubjectModelMenager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,8 +175,8 @@
 		6C1EB7022971DFFA000A1A46 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6C1EB7032971E041000A1A46 /* StudentTableViewCell.swift */,
-				6C1EB7042971E041000A1A46 /* StudentTableViewCell.xib */,
+				6CB3BD7129767BE500B8CDB2 /* StudentSubjectCell */,
+				6CB3BD7029767BC900B8CDB2 /* StudentCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -179,6 +198,24 @@
 				6C73F5932972696700C4A049 /* SQLite Demo-Bridging-Header.h */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		6CB3BD7029767BC900B8CDB2 /* StudentCell */ = {
+			isa = PBXGroup;
+			children = (
+				6C1EB7032971E041000A1A46 /* StudentTableViewCell.swift */,
+				6C1EB7042971E041000A1A46 /* StudentTableViewCell.xib */,
+			);
+			path = StudentCell;
+			sourceTree = "<group>";
+		};
+		6CB3BD7129767BE500B8CDB2 /* StudentSubjectCell */ = {
+			isa = PBXGroup;
+			children = (
+				6CB3BD7229767C2900B8CDB2 /* SubjectTableViewCell.swift */,
+				6CB3BD7329767C2900B8CDB2 /* SubjectTableViewCell.xib */,
+			);
+			path = StudentSubjectCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +281,9 @@
 				6C1EB6F02971C2C4000A1A46 /* Assets.xcassets in Resources */,
 				6C1EB6EE2971C2C3000A1A46 /* Main.storyboard in Resources */,
 				6C1EB7062971E041000A1A46 /* StudentTableViewCell.xib in Resources */,
+				6CB3BD7529767C2900B8CDB2 /* SubjectTableViewCell.xib in Resources */,
 				6C73F591297263FE00C4A049 /* SqliteDemo.db in Resources */,
+				6CB3BD772976A1CA00B8CDB2 /* StudentSubject.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,17 +295,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C73F5A529726A0200C4A049 /* Util.swift in Sources */,
+				6CB3BD6729766A5900B8CDB2 /* StudentSubjectVC.swift in Sources */,
 				6C73F5A729726BC200C4A049 /* StudentModel.swift in Sources */,
 				6C1EB7012971DA26000A1A46 /* AddStudentViewController.swift in Sources */,
 				6C1EB7052971E041000A1A46 /* StudentTableViewCell.swift in Sources */,
+				6CB3BD6929766AA700B8CDB2 /* AddSubjectVC.swift in Sources */,
 				6C1EB6EB2971C2C3000A1A46 /* ViewController.swift in Sources */,
 				6C1EB6E72971C2C3000A1A46 /* AppDelegate.swift in Sources */,
 				6C73F5A929726C2600C4A049 /* ModelMenager.swift in Sources */,
 				6C73F5A32972696700C4A049 /* FMResultSet.m in Sources */,
+				6CB3BD7429767C2900B8CDB2 /* SubjectTableViewCell.swift in Sources */,
 				6C73F5A02972696700C4A049 /* FMDatabasePool.m in Sources */,
 				6C73F5A22972696700C4A049 /* FMDatabaseAdditions.m in Sources */,
+				6CB3BD6D2976705C00B8CDB2 /* SubjectModelMenager.swift in Sources */,
 				6C1EB6E92971C2C3000A1A46 /* SceneDelegate.swift in Sources */,
 				6C73F59F2972696700C4A049 /* FMDatabaseQueue.m in Sources */,
+				6CB3BD6B29766FA800B8CDB2 /* SubjectModel.swift in Sources */,
 				6C73F5A12972696700C4A049 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

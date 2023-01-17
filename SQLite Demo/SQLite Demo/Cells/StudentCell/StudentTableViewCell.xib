@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="142" id="KGk-i7-Jjw" customClass="StudentTableViewCell" customModule="SQLite_Demo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="368" height="142"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="123" id="KGk-i7-Jjw" customClass="StudentTableViewCell" customModule="SQLite_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="368" height="142"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-yZ-kO1">
@@ -27,7 +27,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marks:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of3-3r-HxA">
-                        <rect key="frame" x="10" y="46" width="55" height="21"/>
+                        <rect key="frame" x="10" y="41" width="55" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,13 +39,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsx-c4-teS">
-                        <rect key="frame" x="75" y="46" width="23.666666666666671" height="21.666666666666671"/>
+                        <rect key="frame" x="75" y="41" width="23.666666666666671" height="21.666666666666671"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-QB-g6t">
-                        <rect key="frame" x="293" y="10" width="70" height="30"/>
+                        <rect key="frame" x="300" y="10" width="70" height="30"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="H7X-bO-Ibp"/>
@@ -58,7 +58,7 @@
                         </buttonConfiguration>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-zN-ez2">
-                        <rect key="frame" x="293" y="50" width="70" height="30"/>
+                        <rect key="frame" x="300" y="50" width="70" height="30"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Delete">
@@ -67,13 +67,13 @@
                         </buttonConfiguration>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-Db-Dsd">
-                        <rect key="frame" x="10" y="82" width="55" height="21"/>
+                        <rect key="frame" x="10" y="72" width="55" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLF-UR-0UY">
-                        <rect key="frame" x="75" y="82" width="8.3333333333333286" height="21"/>
+                        <rect key="frame" x="75" y="72" width="8.3333333333333286" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -82,15 +82,14 @@
                 <constraints>
                     <constraint firstItem="jsx-c4-teS" firstAttribute="leading" secondItem="of3-3r-HxA" secondAttribute="trailing" constant="10" id="1ZZ-dM-Q6R"/>
                     <constraint firstItem="OLF-UR-0UY" firstAttribute="top" secondItem="lBB-Db-Dsd" secondAttribute="top" id="3pF-VB-Ihf"/>
-                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="trailing" secondItem="of3-3r-HxA" secondAttribute="trailing" id="6ZQ-gd-nq8"/>
                     <constraint firstItem="JwT-QB-g6t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9S9-O4-T4K" secondAttribute="trailing" constant="10" id="7ip-5n-FIK"/>
-                    <constraint firstItem="of3-3r-HxA" firstAttribute="top" secondItem="Gci-yZ-kO1" secondAttribute="bottom" constant="15" id="A7M-tx-pC5"/>
+                    <constraint firstItem="of3-3r-HxA" firstAttribute="top" secondItem="Gci-yZ-kO1" secondAttribute="bottom" constant="10" id="A7M-tx-pC5"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="leading" secondItem="Gci-yZ-kO1" secondAttribute="leading" id="AHk-IC-MKP"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="width" secondItem="JwT-QB-g6t" secondAttribute="width" id="AOT-Nt-AYB"/>
                     <constraint firstItem="OLF-UR-0UY" firstAttribute="leading" secondItem="lBB-Db-Dsd" secondAttribute="trailing" constant="10" id="CTv-uS-ydr"/>
-                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="leading" secondItem="of3-3r-HxA" secondAttribute="leading" id="EX3-X0-WsD"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="height" secondItem="JwT-QB-g6t" secondAttribute="height" id="FZh-QG-cus"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="top" secondItem="JwT-QB-g6t" secondAttribute="bottom" constant="10" id="Ic4-AT-jM9"/>
-                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="top" secondItem="of3-3r-HxA" secondAttribute="bottom" constant="15" id="My1-Tc-6jq"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="top" secondItem="of3-3r-HxA" secondAttribute="bottom" constant="10" id="My1-Tc-6jq"/>
                     <constraint firstAttribute="trailing" secondItem="JwT-QB-g6t" secondAttribute="trailing" constant="5" id="SCE-08-aly"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="trailing" secondItem="JwT-QB-g6t" secondAttribute="trailing" id="SDb-rz-2Op"/>
                     <constraint firstItem="of3-3r-HxA" firstAttribute="trailing" secondItem="Gci-yZ-kO1" secondAttribute="trailing" id="VXl-K5-bvq"/>
@@ -100,6 +99,7 @@
                     <constraint firstItem="of3-3r-HxA" firstAttribute="leading" secondItem="Gci-yZ-kO1" secondAttribute="leading" id="bvg-Wg-Oij"/>
                     <constraint firstItem="Gci-yZ-kO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d4z-9v-TlC"/>
                     <constraint firstItem="9S9-O4-T4K" firstAttribute="top" secondItem="Gci-yZ-kO1" secondAttribute="top" id="eI4-pE-0i9"/>
+                    <constraint firstItem="lBB-Db-Dsd" firstAttribute="trailing" secondItem="Gci-yZ-kO1" secondAttribute="trailing" id="gML-PM-2lK"/>
                     <constraint firstItem="AGL-zN-ez2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jsx-c4-teS" secondAttribute="trailing" constant="10" id="lH7-EU-ddy"/>
                     <constraint firstItem="9S9-O4-T4K" firstAttribute="leading" secondItem="Gci-yZ-kO1" secondAttribute="trailing" constant="10" id="tBe-j1-bhm"/>
                 </constraints>
@@ -112,7 +112,7 @@
                 <outlet property="marksLabel" destination="jsx-c4-teS" id="8zD-vq-1Fu"/>
                 <outlet property="nameLabel" destination="9S9-O4-T4K" id="O3w-hX-6Xa"/>
             </connections>
-            <point key="canvasLocation" x="143.5114503816794" y="44.366197183098592"/>
+            <point key="canvasLocation" x="135.1145038167939" y="36.971830985915496"/>
         </tableViewCell>
     </objects>
     <resources>

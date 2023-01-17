@@ -17,13 +17,11 @@ class AddStudentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if headerTitle != ""{
             self.title = headerTitle
             studentNameTextField.text = student?.name
             studentMarksTextField.text = student?.marks
         }
-        
     }
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
@@ -45,3 +43,5 @@ class AddStudentViewController: UIViewController {
     }
     
 }
+
+

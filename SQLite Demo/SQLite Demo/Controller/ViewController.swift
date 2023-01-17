@@ -20,7 +20,14 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         allStudent = ModelMenager.getInstance().getAllStudent()
+        
         studentTableView.reloadData()
+    }
+    
+    
+    @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "StudentSubjectVC") as! StudentSubjectVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func rightBarButtonAction(_ sender: UIBarButtonItem) {
@@ -34,7 +41,7 @@ class ViewController: UIViewController {
         studentTableView.delegate = self
         studentTableView.dataSource = self
     }
-
+    
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
@@ -42,7 +49,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         return allStudent.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! StudentTableViewCell
         cell.nameLabel.text = allStudent[indexPath.row].name
         cell.marksLabel.text = allStudent[indexPath.row].marks
@@ -55,7 +62,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 100
     }
     
     @objc func onClickEdit(_ sender: UIButton){
@@ -70,8 +77,6 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         allStudent.remove(at: sender.tag)
         studentTableView.reloadData()
         print("isDeleted : \(isDeleted)")
-        
     }
-    
     
 }

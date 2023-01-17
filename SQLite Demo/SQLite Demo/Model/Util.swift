@@ -35,9 +35,23 @@ class Util{
             }
         }
     }
-
     
+    //MARK: copyDatabaseSubject
     
+    func copyDatabaseSubject(dbName: String){
+        let dbPath = getPath(dbName: "StudentSubject.db")
+        let fileManager = FileManager.default
+        if !fileManager.fileExists(atPath: dbPath){
+            let bundle = Bundle.main.resourceURL
+            let file = bundle?.appendingPathComponent(dbName)
+            do{
+                try fileManager.copyItem(atPath: file!.path, toPath: dbPath)
+            }
+            catch let err{
+                print(err.localizedDescription)
+            }
+        }
+    }
     
 }
 
