@@ -46,7 +46,7 @@ class AddSubjectVC: UIViewController {
         }
         else{
             let subject = SubjectModel(names: studentNamesTextField.text!,subject1: subject1TextField.text!,subject2: subject2TextField.text!,subject3: subject3TextField.text!)
-            let isSave = SubjectModelMenager.getInstances().saveSubjectStudent(subjectModel: subject)
+            let isSave = SubjectModelMenager.getInstancesSubject().saveSubjectStudent(subjectModel: subject)
             print("isSave : \(isSave)")
         }
         

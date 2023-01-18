@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var studentTableView: UITableView!
-    
     var allStudent = [StudentModel]()
     
     override func viewDidLoad() {
@@ -20,10 +19,8 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         allStudent = ModelMenager.getInstance().getAllStudent()
-        
         studentTableView.reloadData()
     }
-    
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "StudentSubjectVC") as! StudentSubjectVC
@@ -78,5 +75,13 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         studentTableView.reloadData()
         print("isDeleted : \(isDeleted)")
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "StudentSubjectVC") as! StudentSubjectVC
+        self.navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
     
 }

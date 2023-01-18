@@ -17,7 +17,7 @@ class StudentSubjectVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        subjectAllStudent = SubjectModelMenager.getInstances().getAllStudentSubject()
+        subjectAllStudent = SubjectModelMenager.getInstancesSubject().getAllStudentSubject()
         subjectTableView.reloadData()
     }
     
@@ -49,7 +49,15 @@ extension StudentSubjectVC: UITableViewDelegate,UITableViewDataSource{
         cell.subject1Label.text = subjectAllStudent[indexPath.row].subject1
         cell.subject2Label.text = subjectAllStudent[indexPath.row].subject2
         cell.subject3Label.text = subjectAllStudent[indexPath.row].subject3
+        cell.subjectDeleteButton.addTarget(self, action: #selector(onClickDelet(_:)), for: .touchUpInside)
         return cell
+    }
+    
+    @objc func onClickDelet(_ sender: UIButton){
+        let isDeleted = SubjectModelMenager.getInstancesSubject().studentSubjectDelete(studentSubject: subjectAllStudent[sender.tag])
+        subjectAllStudent.remove(at: sender.tag)
+        subjectTableView.reloadData()
+        print("isDeleted : \(isDeleted)")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

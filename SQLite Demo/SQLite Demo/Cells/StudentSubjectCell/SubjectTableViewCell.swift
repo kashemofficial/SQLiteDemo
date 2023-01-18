@@ -13,8 +13,7 @@ class SubjectTableViewCell: UITableViewCell {
     @IBOutlet weak var subject1Label: UILabel!
     @IBOutlet weak var subject2Label: UILabel!
     @IBOutlet weak var subject3Label: UILabel!
-    @IBOutlet weak var totalMarksLabel: UILabel!
-    
+    @IBOutlet weak var subjectDeleteButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

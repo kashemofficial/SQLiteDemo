@@ -13,7 +13,7 @@ var shareInstanceSubject = SubjectModelMenager()
 
 class SubjectModelMenager {
     var databaseSubject: FMDatabase? = nil
-    static func getInstances() -> SubjectModelMenager {
+    static func getInstancesSubject() -> SubjectModelMenager {
         if shareInstanceSubject.databaseSubject == nil{
             shareInstanceSubject.databaseSubject = FMDatabase(path: Util.share.getPath(dbName: "StudentSubject.db"))
         }
@@ -47,7 +47,7 @@ class SubjectModelMenager {
                         subject1: (resultset?.string(forColumn: "subject1"))!,
                         subject2: (resultset?.string(forColumn: "subject2"))!,
                         subject3: (resultset?.string(forColumn: "subject3"))!)
-                       // totalMarks: (resultset?.string(forColumn: "totalMarks"))!)
+                       
                     studentSubject.append(subjectModel)
                 }
             }
@@ -57,6 +57,16 @@ class SubjectModelMenager {
         shareInstanceSubject.databaseSubject?.close()
         return studentSubject
     }
+    
+    //MARK: Delete StudentSubject Data
+    
+    func studentSubjectDelete(studentSubject: SubjectModel) -> Bool{
+        shareInstanceSubject.databaseSubject?.open()
+        let isDeleted = (shareInstanceSubject.databaseSubject?.executeUpdate("DELETE FROM studentSubject WHERE name=?", withArgumentsIn: [studentSubject.names]))
+        shareInstanceSubject.databaseSubject?.close()
+        return isDeleted!
+    }
+    
     
 }
 
